@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="data:text/css;charset=utf-8,%0A%40font%2Dface%20%7B%0Afont%2Dfamily%3A%20octicons%2Dlink%3B%0Asrc%3A%20url%28data%3Afont%2Fwoff%3Bcharset%3Dutf%2D8%3Bbase64%2Cd09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM%2B8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB%2FaFGpk3jaTY6xa8JAGMW%2FO62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v%2Bk%2F0an2i%2BitHDw3v2%2B9%2BDBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3%2FI7AtxEJLtzzuZfI%2BVVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy%2FLt7Kc%2B0vWY%2FgAgIIEqAN9we0pwKXreiMasxvabDQMM4riO%2BqxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw%2Bymhce7vwM9jSqO8JyVd5RH9gyTt2%2BJ%2FyUmYlIR0s04n6%2B7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv%2FocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi%2BW2%2BMjCzMIDApSwvXzC97Z4Ig8N%2FBxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh%2F8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT%2BAEjAwuDFpBmA9KMDEwMCh9i%2Fv8H8sH0%2F4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9%2FlqYwOGZxeUelN2U2R6%2BcArgtCJpauW7UQBqnFkUsjAY%2FkOU1cP%2BDAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl%2BvvmM%2FbyA48e6tWrKArm4ZJlCbdsrxksL1AwWn%2FyBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO%2F%2FsdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd%2F89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF%2B9JOS0nbaaYDCQfwCJ7Au3AHj%2BLO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm%2BEBXuAbHmIMSRMs%2B4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL%2BhD7C1xoaHeLJSEao0FEW14ckxC%2BTU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13%2F%2Blm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl%2B9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O%2FAdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB%2F%2F%2FAA8AAQAAAAAAAAAAAAAAAAABAAAAAA%3D%3D%29%20format%28%27woff%27%29%3B%0A%7D%0Abody%20%7B%0A%2Dwebkit%2Dtext%2Dsize%2Dadjust%3A%20100%25%3B%0Atext%2Dsize%2Dadjust%3A%20100%25%3B%0Acolor%3A%20%23333%3B%0Afont%2Dfamily%3A%20%22Helvetica%20Neue%22%2C%20Helvetica%2C%20%22Segoe%20UI%22%2C%20Arial%2C%20freesans%2C%20sans%2Dserif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0Afont%2Dsize%3A%2016px%3B%0Aline%2Dheight%3A%201%2E6%3B%0Aword%2Dwrap%3A%20break%2Dword%3B%0A%7D%0Aa%20%7B%0Abackground%2Dcolor%3A%20transparent%3B%0A%7D%0Aa%3Aactive%2C%0Aa%3Ahover%20%7B%0Aoutline%3A%200%3B%0A%7D%0Astrong%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Ah1%20%7B%0Afont%2Dsize%3A%202em%3B%0Amargin%3A%200%2E67em%200%3B%0A%7D%0Aimg%20%7B%0Aborder%3A%200%3B%0A%7D%0Ahr%20%7B%0Abox%2Dsizing%3A%20content%2Dbox%3B%0Aheight%3A%200%3B%0A%7D%0Apre%20%7B%0Aoverflow%3A%20auto%3B%0A%7D%0Acode%2C%0Akbd%2C%0Apre%20%7B%0Afont%2Dfamily%3A%20monospace%2C%20monospace%3B%0Afont%2Dsize%3A%201em%3B%0A%7D%0Ainput%20%7B%0Acolor%3A%20inherit%3B%0Afont%3A%20inherit%3B%0Amargin%3A%200%3B%0A%7D%0Ahtml%20input%5Bdisabled%5D%20%7B%0Acursor%3A%20default%3B%0A%7D%0Ainput%20%7B%0Aline%2Dheight%3A%20normal%3B%0A%7D%0Ainput%5Btype%3D%22checkbox%22%5D%20%7B%0Abox%2Dsizing%3A%20border%2Dbox%3B%0Apadding%3A%200%3B%0A%7D%0Atable%20%7B%0Aborder%2Dcollapse%3A%20collapse%3B%0Aborder%2Dspacing%3A%200%3B%0A%7D%0Atd%2C%0Ath%20%7B%0Apadding%3A%200%3B%0A%7D%0A%2A%20%7B%0Abox%2Dsizing%3A%20border%2Dbox%3B%0A%7D%0Ainput%20%7B%0Afont%3A%2013px%20%2F%201%2E4%20Helvetica%2C%20arial%2C%20nimbussansl%2C%20liberationsans%2C%20freesans%2C%20clean%2C%20sans%2Dserif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%7D%0Aa%20%7B%0Acolor%3A%20%234078c0%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aa%3Ahover%2C%0Aa%3Aactive%20%7B%0Atext%2Ddecoration%3A%20underline%3B%0A%7D%0Ahr%20%7B%0Aheight%3A%200%3B%0Amargin%3A%2015px%200%3B%0Aoverflow%3A%20hidden%3B%0Abackground%3A%20transparent%3B%0Aborder%3A%200%3B%0Aborder%2Dbottom%3A%201px%20solid%20%23ddd%3B%0A%7D%0Ahr%3Abefore%20%7B%0Adisplay%3A%20table%3B%0Acontent%3A%20%22%22%3B%0A%7D%0Ahr%3Aafter%20%7B%0Adisplay%3A%20table%3B%0Aclear%3A%20both%3B%0Acontent%3A%20%22%22%3B%0A%7D%0Ah1%2C%0Ah2%2C%0Ah3%2C%0Ah4%2C%0Ah5%2C%0Ah6%20%7B%0Amargin%2Dtop%3A%2015px%3B%0Amargin%2Dbottom%3A%2015px%3B%0Aline%2Dheight%3A%201%2E1%3B%0A%7D%0Ah1%20%7B%0Afont%2Dsize%3A%2030px%3B%0A%7D%0Ah2%20%7B%0Afont%2Dsize%3A%2021px%3B%0A%7D%0Ah3%20%7B%0Afont%2Dsize%3A%2016px%3B%0A%7D%0Ah4%20%7B%0Afont%2Dsize%3A%2014px%3B%0A%7D%0Ah5%20%7B%0Afont%2Dsize%3A%2012px%3B%0A%7D%0Ah6%20%7B%0Afont%2Dsize%3A%2011px%3B%0A%7D%0Ablockquote%20%7B%0Amargin%3A%200%3B%0A%7D%0Aul%2C%0Aol%20%7B%0Apadding%3A%200%3B%0Amargin%2Dtop%3A%200%3B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Aol%20ol%2C%0Aul%20ol%20%7B%0Alist%2Dstyle%2Dtype%3A%20lower%2Droman%3B%0A%7D%0Aul%20ul%20ol%2C%0Aul%20ol%20ol%2C%0Aol%20ul%20ol%2C%0Aol%20ol%20ol%20%7B%0Alist%2Dstyle%2Dtype%3A%20lower%2Dalpha%3B%0A%7D%0Add%20%7B%0Amargin%2Dleft%3A%200%3B%0A%7D%0Acode%20%7B%0Afont%2Dfamily%3A%20Consolas%2C%20%22Liberation%20Mono%22%2C%20Menlo%2C%20Courier%2C%20monospace%3B%0Afont%2Dsize%3A%2012px%3B%0A%7D%0Apre%20%7B%0Amargin%2Dtop%3A%200%3B%0Amargin%2Dbottom%3A%200%3B%0Afont%3A%2012px%20Consolas%2C%20%22Liberation%20Mono%22%2C%20Menlo%2C%20Courier%2C%20monospace%3B%0A%7D%0A%2Eselect%3A%3A%2Dms%2Dexpand%20%7B%0Aopacity%3A%200%3B%0A%7D%0A%2Eocticon%20%7B%0Afont%3A%20normal%20normal%20normal%2016px%2F1%20octicons%2Dlink%3B%0Adisplay%3A%20inline%2Dblock%3B%0Atext%2Ddecoration%3A%20none%3B%0Atext%2Drendering%3A%20auto%3B%0A%2Dwebkit%2Dfont%2Dsmoothing%3A%20antialiased%3B%0A%2Dmoz%2Dosx%2Dfont%2Dsmoothing%3A%20grayscale%3B%0A%2Dwebkit%2Duser%2Dselect%3A%20none%3B%0A%2Dmoz%2Duser%2Dselect%3A%20none%3B%0A%2Dms%2Duser%2Dselect%3A%20none%3B%0Auser%2Dselect%3A%20none%3B%0A%7D%0A%2Eocticon%2Dlink%3Abefore%20%7B%0Acontent%3A%20%27%5Cf05c%27%3B%0A%7D%0A%2Emarkdown%2Dbody%3Abefore%20%7B%0Adisplay%3A%20table%3B%0Acontent%3A%20%22%22%3B%0A%7D%0A%2Emarkdown%2Dbody%3Aafter%20%7B%0Adisplay%3A%20table%3B%0Aclear%3A%20both%3B%0Acontent%3A%20%22%22%3B%0A%7D%0A%2Emarkdown%2Dbody%3E%2A%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%20%21important%3B%0A%7D%0A%2Emarkdown%2Dbody%3E%2A%3Alast%2Dchild%20%7B%0Amargin%2Dbottom%3A%200%20%21important%3B%0A%7D%0Aa%3Anot%28%5Bhref%5D%29%20%7B%0Acolor%3A%20inherit%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0A%2Eanchor%20%7B%0Adisplay%3A%20inline%2Dblock%3B%0Apadding%2Dright%3A%202px%3B%0Amargin%2Dleft%3A%20%2D18px%3B%0A%7D%0A%2Eanchor%3Afocus%20%7B%0Aoutline%3A%20none%3B%0A%7D%0Ah1%2C%0Ah2%2C%0Ah3%2C%0Ah4%2C%0Ah5%2C%0Ah6%20%7B%0Amargin%2Dtop%3A%201em%3B%0Amargin%2Dbottom%3A%2016px%3B%0Afont%2Dweight%3A%20bold%3B%0Aline%2Dheight%3A%201%2E4%3B%0A%7D%0Ah1%20%2Eocticon%2Dlink%2C%0Ah2%20%2Eocticon%2Dlink%2C%0Ah3%20%2Eocticon%2Dlink%2C%0Ah4%20%2Eocticon%2Dlink%2C%0Ah5%20%2Eocticon%2Dlink%2C%0Ah6%20%2Eocticon%2Dlink%20%7B%0Acolor%3A%20%23000%3B%0Avertical%2Dalign%3A%20middle%3B%0Avisibility%3A%20hidden%3B%0A%7D%0Ah1%3Ahover%20%2Eanchor%2C%0Ah2%3Ahover%20%2Eanchor%2C%0Ah3%3Ahover%20%2Eanchor%2C%0Ah4%3Ahover%20%2Eanchor%2C%0Ah5%3Ahover%20%2Eanchor%2C%0Ah6%3Ahover%20%2Eanchor%20%7B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Ah1%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%2C%0Ah2%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%2C%0Ah3%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%2C%0Ah4%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%2C%0Ah5%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%2C%0Ah6%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%20%7B%0Avisibility%3A%20visible%3B%0A%7D%0Ah1%20%7B%0Apadding%2Dbottom%3A%200%2E3em%3B%0Afont%2Dsize%3A%202%2E25em%3B%0Aline%2Dheight%3A%201%2E2%3B%0Aborder%2Dbottom%3A%201px%20solid%20%23eee%3B%0A%7D%0Ah1%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%3B%0A%7D%0Ah2%20%7B%0Apadding%2Dbottom%3A%200%2E3em%3B%0Afont%2Dsize%3A%201%2E75em%3B%0Aline%2Dheight%3A%201%2E225%3B%0Aborder%2Dbottom%3A%201px%20solid%20%23eee%3B%0A%7D%0Ah2%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%3B%0A%7D%0Ah3%20%7B%0Afont%2Dsize%3A%201%2E5em%3B%0Aline%2Dheight%3A%201%2E43%3B%0A%7D%0Ah3%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%2E2%3B%0A%7D%0Ah4%20%7B%0Afont%2Dsize%3A%201%2E25em%3B%0A%7D%0Ah4%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%2E2%3B%0A%7D%0Ah5%20%7B%0Afont%2Dsize%3A%201em%3B%0A%7D%0Ah5%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%2E1%3B%0A%7D%0Ah6%20%7B%0Afont%2Dsize%3A%201em%3B%0Acolor%3A%20%23777%3B%0A%7D%0Ah6%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%2E1%3B%0A%7D%0Ap%2C%0Ablockquote%2C%0Aul%2C%0Aol%2C%0Adl%2C%0Atable%2C%0Apre%20%7B%0Amargin%2Dtop%3A%200%3B%0Amargin%2Dbottom%3A%2016px%3B%0A%7D%0Ahr%20%7B%0Aheight%3A%204px%3B%0Apadding%3A%200%3B%0Amargin%3A%2016px%200%3B%0Abackground%2Dcolor%3A%20%23e7e7e7%3B%0Aborder%3A%200%20none%3B%0A%7D%0Aul%2C%0Aol%20%7B%0Apadding%2Dleft%3A%202em%3B%0A%7D%0Aul%20ul%2C%0Aul%20ol%2C%0Aol%20ol%2C%0Aol%20ul%20%7B%0Amargin%2Dtop%3A%200%3B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Ali%3Ep%20%7B%0Amargin%2Dtop%3A%2016px%3B%0A%7D%0Adl%20%7B%0Apadding%3A%200%3B%0A%7D%0Adl%20dt%20%7B%0Apadding%3A%200%3B%0Amargin%2Dtop%3A%2016px%3B%0Afont%2Dsize%3A%201em%3B%0Afont%2Dstyle%3A%20italic%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Adl%20dd%20%7B%0Apadding%3A%200%2016px%3B%0Amargin%2Dbottom%3A%2016px%3B%0A%7D%0Ablockquote%20%7B%0Apadding%3A%200%2015px%3B%0Acolor%3A%20%23777%3B%0Aborder%2Dleft%3A%204px%20solid%20%23ddd%3B%0A%7D%0Ablockquote%3E%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%3B%0A%7D%0Ablockquote%3E%3Alast%2Dchild%20%7B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Atable%20%7B%0Adisplay%3A%20block%3B%0Awidth%3A%20100%25%3B%0Aoverflow%3A%20auto%3B%0Aword%2Dbreak%3A%20normal%3B%0Aword%2Dbreak%3A%20keep%2Dall%3B%0A%7D%0Atable%20th%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Atable%20th%2C%0Atable%20td%20%7B%0Apadding%3A%206px%2013px%3B%0Aborder%3A%201px%20solid%20%23ddd%3B%0A%7D%0Atable%20tr%20%7B%0Abackground%2Dcolor%3A%20%23fff%3B%0Aborder%2Dtop%3A%201px%20solid%20%23ccc%3B%0A%7D%0Atable%20tr%3Anth%2Dchild%282n%29%20%7B%0Abackground%2Dcolor%3A%20%23f8f8f8%3B%0A%7D%0Aimg%20%7B%0Amax%2Dwidth%3A%20100%25%3B%0Abox%2Dsizing%3A%20content%2Dbox%3B%0Abackground%2Dcolor%3A%20%23fff%3B%0A%7D%0Acode%20%7B%0Apadding%3A%200%3B%0Apadding%2Dtop%3A%200%2E2em%3B%0Apadding%2Dbottom%3A%200%2E2em%3B%0Amargin%3A%200%3B%0Afont%2Dsize%3A%2085%25%3B%0Abackground%2Dcolor%3A%20rgba%280%2C0%2C0%2C0%2E04%29%3B%0Aborder%2Dradius%3A%203px%3B%0A%7D%0Acode%3Abefore%2C%0Acode%3Aafter%20%7B%0Aletter%2Dspacing%3A%20%2D0%2E2em%3B%0Acontent%3A%20%22%5C00a0%22%3B%0A%7D%0Apre%3Ecode%20%7B%0Apadding%3A%200%3B%0Amargin%3A%200%3B%0Afont%2Dsize%3A%20100%25%3B%0Aword%2Dbreak%3A%20normal%3B%0Awhite%2Dspace%3A%20pre%3B%0Abackground%3A%20transparent%3B%0Aborder%3A%200%3B%0A%7D%0A%2Ehighlight%20%7B%0Amargin%2Dbottom%3A%2016px%3B%0A%7D%0A%2Ehighlight%20pre%2C%0Apre%20%7B%0Apadding%3A%2016px%3B%0Aoverflow%3A%20auto%3B%0Afont%2Dsize%3A%2085%25%3B%0Aline%2Dheight%3A%201%2E45%3B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0Aborder%2Dradius%3A%203px%3B%0A%7D%0A%2Ehighlight%20pre%20%7B%0Amargin%2Dbottom%3A%200%3B%0Aword%2Dbreak%3A%20normal%3B%0A%7D%0Apre%20%7B%0Aword%2Dwrap%3A%20normal%3B%0A%7D%0Apre%20code%20%7B%0Adisplay%3A%20inline%3B%0Amax%2Dwidth%3A%20initial%3B%0Apadding%3A%200%3B%0Amargin%3A%200%3B%0Aoverflow%3A%20initial%3B%0Aline%2Dheight%3A%20inherit%3B%0Aword%2Dwrap%3A%20normal%3B%0Abackground%2Dcolor%3A%20transparent%3B%0Aborder%3A%200%3B%0A%7D%0Apre%20code%3Abefore%2C%0Apre%20code%3Aafter%20%7B%0Acontent%3A%20normal%3B%0A%7D%0Akbd%20%7B%0Adisplay%3A%20inline%2Dblock%3B%0Apadding%3A%203px%205px%3B%0Afont%2Dsize%3A%2011px%3B%0Aline%2Dheight%3A%2010px%3B%0Acolor%3A%20%23555%3B%0Avertical%2Dalign%3A%20middle%3B%0Abackground%2Dcolor%3A%20%23fcfcfc%3B%0Aborder%3A%20solid%201px%20%23ccc%3B%0Aborder%2Dbottom%2Dcolor%3A%20%23bbb%3B%0Aborder%2Dradius%3A%203px%3B%0Abox%2Dshadow%3A%20inset%200%20%2D1px%200%20%23bbb%3B%0A%7D%0A%2Epl%2Dc%20%7B%0Acolor%3A%20%23969896%3B%0A%7D%0A%2Epl%2Dc1%2C%0A%2Epl%2Ds%20%2Epl%2Dv%20%7B%0Acolor%3A%20%230086b3%3B%0A%7D%0A%2Epl%2De%2C%0A%2Epl%2Den%20%7B%0Acolor%3A%20%23795da3%3B%0A%7D%0A%2Epl%2Ds%20%2Epl%2Ds1%2C%0A%2Epl%2Dsmi%20%7B%0Acolor%3A%20%23333%3B%0A%7D%0A%2Epl%2Dent%20%7B%0Acolor%3A%20%2363a35c%3B%0A%7D%0A%2Epl%2Dk%20%7B%0Acolor%3A%20%23a71d5d%3B%0A%7D%0A%2Epl%2Dpds%2C%0A%2Epl%2Ds%2C%0A%2Epl%2Ds%20%2Epl%2Dpse%20%2Epl%2Ds1%2C%0A%2Epl%2Dsr%2C%0A%2Epl%2Dsr%20%2Epl%2Dcce%2C%0A%2Epl%2Dsr%20%2Epl%2Dsra%2C%0A%2Epl%2Dsr%20%2Epl%2Dsre%20%7B%0Acolor%3A%20%23183691%3B%0A%7D%0A%2Epl%2Dv%20%7B%0Acolor%3A%20%23ed6a43%3B%0A%7D%0A%2Epl%2Did%20%7B%0Acolor%3A%20%23b52a1d%3B%0A%7D%0A%2Epl%2Dii%20%7B%0Abackground%2Dcolor%3A%20%23b52a1d%3B%0Acolor%3A%20%23f8f8f8%3B%0A%7D%0A%2Epl%2Dsr%20%2Epl%2Dcce%20%7B%0Acolor%3A%20%2363a35c%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%2Epl%2Dml%20%7B%0Acolor%3A%20%23693a17%3B%0A%7D%0A%2Epl%2Dmh%2C%0A%2Epl%2Dmh%20%2Epl%2Den%2C%0A%2Epl%2Dms%20%7B%0Acolor%3A%20%231d3e81%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%2Epl%2Dmq%20%7B%0Acolor%3A%20%23008080%3B%0A%7D%0A%2Epl%2Dmi%20%7B%0Acolor%3A%20%23333%3B%0Afont%2Dstyle%3A%20italic%3B%0A%7D%0A%2Epl%2Dmb%20%7B%0Acolor%3A%20%23333%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%2Epl%2Dmd%20%7B%0Abackground%2Dcolor%3A%20%23ffecec%3B%0Acolor%3A%20%23bd2c00%3B%0A%7D%0A%2Epl%2Dmi1%20%7B%0Abackground%2Dcolor%3A%20%23eaffea%3B%0Acolor%3A%20%2355a532%3B%0A%7D%0A%2Epl%2Dmdr%20%7B%0Acolor%3A%20%23795da3%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%2Epl%2Dmo%20%7B%0Acolor%3A%20%231d3e81%3B%0A%7D%0Akbd%20%7B%0Adisplay%3A%20inline%2Dblock%3B%0Apadding%3A%203px%205px%3B%0Afont%3A%2011px%20Consolas%2C%20%22Liberation%20Mono%22%2C%20Menlo%2C%20Courier%2C%20monospace%3B%0Aline%2Dheight%3A%2010px%3B%0Acolor%3A%20%23555%3B%0Avertical%2Dalign%3A%20middle%3B%0Abackground%2Dcolor%3A%20%23fcfcfc%3B%0Aborder%3A%20solid%201px%20%23ccc%3B%0Aborder%2Dbottom%2Dcolor%3A%20%23bbb%3B%0Aborder%2Dradius%3A%203px%3B%0Abox%2Dshadow%3A%20inset%200%20%2D1px%200%20%23bbb%3B%0A%7D%0A%2Etask%2Dlist%2Ditem%20%7B%0Alist%2Dstyle%2Dtype%3A%20none%3B%0A%7D%0A%2Etask%2Dlist%2Ditem%2B%2Etask%2Dlist%2Ditem%20%7B%0Amargin%2Dtop%3A%203px%3B%0A%7D%0A%2Etask%2Dlist%2Ditem%20input%20%7B%0Amargin%3A%200%200%2E35em%200%2E25em%20%2D1%2E6em%3B%0Avertical%2Dalign%3A%20middle%3B%0A%7D%0A%3Achecked%2B%2Eradio%2Dlabel%20%7B%0Az%2Dindex%3A%201%3B%0Aposition%3A%20relative%3B%0Aborder%2Dcolor%3A%20%234078c0%3B%0A%7D%0Acode%20%3E%20%2Ekw%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Edt%20%7B%20color%3A%20%23ed6a43%3B%20%7D%0Acode%20%3E%20%2Edv%20%7B%20color%3A%20%23009999%3B%20%7D%0Acode%20%3E%20%2Ebn%20%7B%20color%3A%20%23009999%3B%20%7D%0Acode%20%3E%20%2Efl%20%7B%20color%3A%20%23009999%3B%20%7D%0Acode%20%3E%20%2Ech%20%7B%20color%3A%20%23009999%3B%20%7D%0Acode%20%3E%20%2Est%20%7B%20color%3A%20%23183691%3B%20%7D%0Acode%20%3E%20%2Eco%20%7B%20color%3A%20%23969896%3B%20%7D%0Acode%20%3E%20%2Eot%20%7B%20color%3A%20%230086b3%3B%20%7D%0Acode%20%3E%20%2Eal%20%7B%20color%3A%20%23a61717%3B%20%7D%0Acode%20%3E%20%2Efu%20%7B%20color%3A%20%2363a35c%3B%20%7D%0Acode%20%3E%20%2Eer%20%7B%20color%3A%20%23a61717%3B%20background%2Dcolor%3A%20%23e3d2d2%3B%20%7D%0Acode%20%3E%20%2Ewa%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Ecn%20%7B%20color%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Esc%20%7B%20color%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Evs%20%7B%20color%3A%20%23183691%3B%20%7D%0Acode%20%3E%20%2Ess%20%7B%20color%3A%20%23183691%3B%20%7D%0Acode%20%3E%20%2Eim%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Eva%20%7Bcolor%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Ecf%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Eop%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Ebu%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Eex%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Epp%20%7B%20color%3A%20%23999999%3B%20%7D%0Acode%20%3E%20%2Eat%20%7B%20color%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Edo%20%7B%20color%3A%20%23969896%3B%20%7D%0Acode%20%3E%20%2Ean%20%7B%20color%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Ecv%20%7B%20color%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Ein%20%7B%20color%3A%20%23008080%3B%20%7D%0A" rel="stylesheet">
+<style>
+body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+  padding-top: 0px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 id="linear-regression-with-r">Linear Regression with R</h1>
+<h1 id="one-variable-linear-regression">One-variable linear regression</h1>
+<h2 id="part-1-basic-function">Part 1: Basic Function</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># warmUpExercise</span>
+warmUpExercise  &lt;-<span class="st"> </span><span class="cf">function</span>() {
+  A &lt;-<span class="st"> </span><span class="kw">diag</span>(<span class="dv">5</span>) 
+  A
+}
+<span class="kw">cat</span>(<span class="st">'5x5 Identity Matrix: </span><span class="ch">\n</span><span class="st">'</span>)</code></pre></div>
+<pre><code>## 5x5 Identity Matrix:</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">warmUpExercise</span>()</code></pre></div>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    1    0    0    0    0
+## [2,]    0    1    0    0    0
+## [3,]    0    0    1    0    0
+## [4,]    0    0    0    1    0
+## [5,]    0    0    0    0    1</code></pre>
+<h2 id="part-2-plotting">Part 2: Plotting</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">plotData &lt;-<span class="st"> </span><span class="cf">function</span> (x, y) {
+  <span class="kw">plot</span>(
+    x, y, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">pch =</span> <span class="dv">4</span>,<span class="dt">cex =</span> <span class="fl">1.1</span>,<span class="dt">lwd =</span> <span class="dv">2</span>,
+    <span class="dt">xlab =</span> <span class="st">'Profit in $10,000s'</span>,
+    <span class="dt">ylab =</span> <span class="st">'Population of City in 10,000s'</span>
+  )
+}</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cat</span>(<span class="st">'Plotting Data ...</span><span class="ch">\n</span><span class="st">'</span>)</code></pre></div>
+<pre><code>## Plotting Data ...</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data &lt;-<span class="st"> </span><span class="kw">read.table</span>(<span class="st">&quot;ex1data1.txt&quot;</span>,<span class="dt">sep=</span><span class="st">','</span>)
+X &lt;-<span class="st"> </span>data[, <span class="dv">1</span>]
+y &lt;-<span class="st"> </span>data[, <span class="dv">2</span>]
+m &lt;-<span class="st"> </span><span class="kw">length</span>(y) <span class="co"># number of training examples</span>
+
+<span class="co"># Plot Data</span>
+<span class="co"># Note: You have to complete the code in plotData.R</span>
+<span class="kw">plotData</span>(X, y)</code></pre></div>
+<p><img src="data:image/png;base64,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" /></p>
+<h2 id="part-3-gradient-descent">Part 3: Gradient descent</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">computeCost  &lt;-<span class="st"> </span><span class="cf">function</span>(X, y, theta) {
+  <span class="co">#   J &lt;- COMPUTECOST(X, y, theta) computes the cost of using theta as the</span>
+  <span class="co">#   parameter for linear regression to fit the data points in X and y</span>
+  
+  <span class="co"># Initialize some useful values</span>
+  m &lt;-<span class="st"> </span><span class="kw">length</span>(y) <span class="co"># number of training examples</span>
+  
+  J &lt;-<span class="st"> </span><span class="dv">0</span>
+  dif &lt;-<span class="st"> </span>X <span class="op">%*%</span><span class="st"> </span>theta <span class="op">-</span><span class="st"> </span>y
+  J &lt;-<span class="st"> </span>(<span class="kw">t</span>(dif) <span class="op">%*%</span><span class="st"> </span>dif) <span class="op">/</span><span class="st"> </span>(<span class="dv">2</span> <span class="op">*</span><span class="st"> </span>m)
+  J
+}</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">gradientDescent &lt;-<span class="st"> </span><span class="cf">function</span>(X, y, theta, alpha, num_iters) {
+  <span class="co">#GRADIENTDESCENT Performs gradient descent to learn theta</span>
+  <span class="co">#   theta &lt;- GRADIENTDESENT(X, y, theta, alpha, num_iters) updates theta by</span>
+  <span class="co">#   taking num_iters gradient steps with learning rate alpha</span>
+  
+  <span class="co"># Initialize some useful values</span>
+  m &lt;-<span class="st"> </span><span class="kw">length</span>(y) <span class="co"># number of training examples</span>
+  J_history =<span class="st"> </span><span class="kw">rep</span>(<span class="dv">0</span>,num_iters <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)
+  theta_history =<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">0</span>,num_iters <span class="op">+</span><span class="st"> </span><span class="dv">1</span>,<span class="kw">length</span>(theta))
+  
+  theta_history[<span class="dv">1</span>,] =<span class="st"> </span><span class="kw">t</span>(theta)
+  J_history[<span class="dv">1</span>] =<span class="st"> </span><span class="kw">computeCost</span>(X, y, theta)
+  
+  <span class="cf">for</span> (iter <span class="cf">in</span> <span class="dv">2</span><span class="op">:</span>(num_iters <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)) {
+
+    <span class="co"># create a copy of theta for simultaneous update.</span>
+    theta_prev =<span class="st"> </span>theta
+    
+    <span class="co"># number of features.</span>
+    p =<span class="st"> </span><span class="kw">dim</span>(X)[<span class="dv">2</span>]
+    
+    <span class="co"># simultaneous update theta using theta_prev.</span>
+    <span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>p) {
+      <span class="co"># vectorized version</span>
+      <span class="co"># (exactly the same with multivariate version)</span>
+      deriv =<span class="st"> </span>(<span class="kw">t</span>(X <span class="op">%*%</span><span class="st"> </span>theta_prev <span class="op">-</span><span class="st"> </span>y) <span class="op">%*%</span><span class="st"> </span>X[, j]) <span class="op">/</span><span class="st"> </span>m
+      
+      <span class="co"># update theta_j</span>
+      theta[j] =<span class="st"> </span>theta_prev[j] <span class="op">-</span><span class="st"> </span>(alpha <span class="op">*</span><span class="st"> </span>deriv)
+    }
+    
+    <span class="co"># Save the cost J in every iteration</span>
+    J_history[iter] =<span class="st"> </span><span class="kw">computeCost</span>(X, y, theta)
+    theta_history[iter,] =<span class="st"> </span><span class="kw">t</span>(theta)
+  }
+  
+  <span class="kw">list</span>(<span class="dt">theta =</span> theta, <span class="dt">J_history =</span> J_history, <span class="dt">theta_history =</span> theta_history)
+}</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cat</span>(<span class="st">'Running Gradient Descent ...</span><span class="ch">\n</span><span class="st">'</span>)</code></pre></div>
+<pre><code>## Running Gradient Descent ...</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">X &lt;-<span class="st"> </span><span class="kw">cbind</span>(<span class="kw">rep</span>(<span class="dv">1</span>,m),X) <span class="co"># Add a column of ones to x</span>
+X &lt;-<span class="st"> </span><span class="kw">as.matrix</span>(X)
+<span class="co"># initialize fitting parameters</span>
+theta &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">8</span>,<span class="dv">3</span>)
+
+<span class="co"># Some gradient descent settings</span>
+iterations &lt;-<span class="st"> </span><span class="dv">1500</span>
+alpha &lt;-<span class="st"> </span><span class="fl">0.02</span>
+
+<span class="co"># compute and display initial cost</span>
+<span class="kw">computeCost</span>(X, y, theta)</code></pre></div>
+<pre><code>##         [,1]
+## [1,] 383.526</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># run gradient descent</span>
+gd &lt;-<span class="st"> </span><span class="kw">gradientDescent</span>(X, y, theta, alpha, iterations)
+<span class="co">#Decompose list (gd) variables into global env variables</span>
+theta &lt;-<span class="st"> </span>gd<span class="op">$</span>theta
+J_history &lt;-<span class="st"> </span>gd<span class="op">$</span>J_history
+theta_history &lt;-<span class="st"> </span>gd<span class="op">$</span>theta_history
+<span class="kw">rm</span>(gd)
+
+<span class="co"># print theta to screen</span>
+<span class="kw">cat</span>(<span class="st">'Theta found by gradient descent: '</span>)</code></pre></div>
+<pre><code>## Theta found by gradient descent:</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cat</span>(<span class="kw">sprintf</span>(<span class="st">'%f %f </span><span class="ch">\n</span><span class="st">'</span>, theta[<span class="dv">1</span>], theta[<span class="dv">2</span>]))</code></pre></div>
+<pre><code>## -3.844313 1.187863</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Plot the linear fit</span>
+<span class="co"># keep previous plot visible</span>
+<span class="kw">plotData</span>(X[, <span class="dv">2</span>], y)
+<span class="kw">lines</span>(X[, <span class="dv">2</span>], X <span class="op">%*%</span><span class="st"> </span>theta, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>)
+<span class="kw">legend</span>(<span class="st">&quot;bottomright&quot;</span>, <span class="kw">c</span>(<span class="st">'Training data'</span>, <span class="st">'Linear regression'</span>), <span class="dt">pch=</span><span class="kw">c</span>(<span class="dv">4</span>,<span class="ot">NA</span>),<span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;red&quot;</span>,<span class="st">&quot;blue&quot;</span>), <span class="dt">lty=</span><span class="kw">c</span>(<span class="ot">NA</span>,<span class="dv">1</span>) )</code></pre></div>
+<p><img src="data:image/png;base64,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" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Predict values for population sizes of 35,000 and 70,000</span>
+predict1 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="fl">3.5</span>) <span class="op">%*%</span><span class="st"> </span>theta
+<span class="kw">cat</span>(<span class="kw">sprintf</span>(<span class="st">'For population = 35,000, we predict a profit of %f</span><span class="ch">\n</span><span class="st">'</span>,predict1<span class="op">*</span><span class="dv">10000</span>))</code></pre></div>
+<pre><code>## For population = 35,000, we predict a profit of 3132.080736</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">predict2 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">7</span>) <span class="op">%*%</span><span class="st"> </span>theta
+<span class="kw">cat</span>(<span class="kw">sprintf</span>(<span class="st">'For population = 70,000, we predict a profit of %f</span><span class="ch">\n</span><span class="st">'</span>,predict2<span class="op">*</span><span class="dv">10000</span>))</code></pre></div>
+<pre><code>## For population = 70,000, we predict a profit of 44707.290050</code></pre>
+<h2 id="part-4-visualizing-jtheta_0-theta_1">Part 4: Visualizing J(theta_0, theta_1)</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cat</span>(<span class="st">'Visualizing J(theta_0, theta_1) ...</span><span class="ch">\n</span><span class="st">'</span>)</code></pre></div>
+<pre><code>## Visualizing J(theta_0, theta_1) ...</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Grid over which we will calculate J</span>
+theta0_vals &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="op">-</span><span class="dv">10</span>, <span class="dv">10</span>, <span class="dt">length.out=</span><span class="dv">100</span>)
+theta1_vals &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="op">-</span><span class="dv">2</span>, <span class="dv">4</span>, <span class="dt">length.out=</span><span class="dv">100</span>)
+
+<span class="co"># initialize J_vals to a matrix of 0's</span>
+J_vals &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">0</span>,<span class="kw">length</span>(theta0_vals), <span class="kw">length</span>(theta1_vals))
+
+<span class="co"># Fill out J_vals</span>
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(theta0_vals)) {
+    <span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(theta1_vals)) {
+      J_vals[i,j] &lt;-<span class="st"> </span><span class="kw">computeCost</span>(X, y, <span class="kw">c</span>(theta0_vals[i], theta1_vals[j]))
+    }
+}
+
+<span class="co">#interactive 3D plot</span>
+<span class="co">#install.packages(&quot;rgl&quot;)</span>
+<span class="kw">library</span>(rgl) 
+<span class="kw">open3d</span>()</code></pre></div>
+<pre><code>## wgl 
+##   1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">nbcol =<span class="st"> </span><span class="dv">100</span>
+color =<span class="st"> </span><span class="kw">rev</span>(<span class="kw">rainbow</span>(nbcol, <span class="dt">start =</span> <span class="dv">0</span><span class="op">/</span><span class="dv">6</span>, <span class="dt">end =</span> <span class="dv">4</span><span class="op">/</span><span class="dv">6</span>))
+J_vals_col  =<span class="st"> </span><span class="kw">cut</span>(J_vals, nbcol)
+
+<span class="kw">persp3d</span>(theta0_vals, theta1_vals, J_vals,<span class="dt">col =</span> color[J_vals_col],
+        <span class="dt">xlab=</span><span class="kw">expression</span>(theta_<span class="dv">0</span>),<span class="dt">ylab=</span><span class="kw">expression</span>(theta_<span class="dv">1</span>),
+        <span class="dt">zlab=</span><span class="st">&quot;Cost&quot;</span>,<span class="dt">main =</span> <span class="st">&quot;Gradient Descent&quot;</span>)
+<span class="kw">points3d</span>(theta_history[, <span class="dv">1</span>], theta_history[, <span class="dv">2</span>], J_history<span class="op">+</span><span class="dv">10</span>, 
+         <span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">size=</span><span class="fl">3.5</span>)
+<span class="kw">lines3d</span>(theta_history[, <span class="dv">1</span>], theta_history[, <span class="dv">2</span>], J_history<span class="op">+</span><span class="dv">10</span>, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>)
+
+<span class="co"># Contour plot</span>
+<span class="co"># Plot J_vals as 20 contours spaced logarithmically between 0.01 and 100</span>
+<span class="co"># logarithmic contours are denser near the center</span>
+logspace &lt;-<span class="st"> </span><span class="cf">function</span>( d1, d2, n) 
+            <span class="kw">return</span>(<span class="kw">exp</span>(<span class="kw">log</span>(<span class="dv">10</span>)<span class="op">*</span><span class="kw">seq</span>(d1, d2, <span class="dt">length.out=</span>n)))
+            <span class="co">#or return(10^seq(d1, d2, length.out=n))</span>
+
+<span class="kw">contour</span>(theta0_vals, theta1_vals, J_vals, <span class="dt">levels =</span> <span class="kw">logspace</span>(<span class="op">-</span><span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">20</span>), 
+        <span class="dt">xlab=</span><span class="kw">expression</span>(theta_<span class="dv">0</span>),
+        <span class="dt">ylab=</span><span class="kw">expression</span>(theta_<span class="dv">1</span>),
+        <span class="dt">drawlabels =</span> <span class="ot">FALSE</span>)
+
+<span class="kw">points</span>(theta[<span class="dv">1</span>], theta[<span class="dv">2</span>], <span class="dt">pch=</span><span class="dv">4</span>, <span class="dt">cex=</span><span class="dv">2</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lwd=</span><span class="dv">2</span>)
+<span class="kw">points</span>(theta_history[, <span class="dv">1</span>], theta_history[, <span class="dv">2</span>], <span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">cex=</span>.<span class="dv">2</span>,<span class="dt">lwd=</span><span class="dv">1</span>,<span class="dt">pch=</span><span class="dv">19</span>)
+<span class="kw">lines</span>(theta_history[, <span class="dv">1</span>], theta_history[, <span class="dv">2</span>], <span class="dt">col=</span><span class="st">&quot;red&quot;</span>)</code></pre></div>
+<p><img src="data:image/png;base64,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" /></p>
+<h1 id="multi-variables-linear-regression">Multi-variables linear regression</h1>
+<h2 id="part-1-feature-normalization">Part 1: Feature Normalization</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## Load Data
+data &lt;-<span class="st"> </span><span class="kw">read.table</span>(<span class="st">'ex1data2.txt'</span>,<span class="dt">sep =</span> <span class="st">','</span>)
+X &lt;-<span class="st"> </span>data[,<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>]
+y &lt;-<span class="st"> </span>data[,<span class="dv">3</span>]
+m &lt;-<span class="st"> </span><span class="kw">length</span>(y)
+
+<span class="co"># Print out some data points</span>
+<span class="kw">cat</span>(<span class="st">'First 10 examples from the dataset: </span><span class="ch">\n</span><span class="st">'</span>)</code></pre></div>
+<pre><code>## First 10 examples from the dataset:</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">temp &lt;-<span class="st"> </span><span class="kw">cbind</span>(<span class="st">&quot;X = [&quot;</span>,X[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>,], <span class="st">&quot;], y =&quot;</span>, y[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>])
+<span class="kw">names</span>(temp) &lt;-<span class="st"> </span><span class="ot">NULL</span>
+<span class="kw">print</span>(temp)</code></pre></div>
+<pre><code>##                              
+## 1  X = [ 2104 3 ], y = 399900
+## 2  X = [ 1600 3 ], y = 329900
+## 3  X = [ 2400 3 ], y = 369000
+## 4  X = [ 1416 2 ], y = 232000
+## 5  X = [ 3000 4 ], y = 539900
+## 6  X = [ 1985 4 ], y = 299900
+## 7  X = [ 1534 3 ], y = 314900
+## 8  X = [ 1427 3 ], y = 198999
+## 9  X = [ 1380 3 ], y = 212000
+## 10 X = [ 1494 3 ], y = 242500</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">featureNormalize &lt;-<span class="st"> </span><span class="cf">function</span>(X) {
+  <span class="co">#FEATURENORMALIZE Normalizes the features in X</span>
+  <span class="co">#   FEATURENORMALIZE(X) returns a normalized version of X where</span>
+  <span class="co">#   the mean value of each feature is 0 and the standard deviation</span>
+  <span class="co">#   is 1. This is often a good preprocessing step to do when</span>
+  <span class="co">#   working with learning algorithms.</span>
+
+  X_norm &lt;-<span class="st"> </span>X
+  mu &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">0</span>,<span class="kw">dim</span>(X)[<span class="dv">2</span>])
+  sigma &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">0</span>,<span class="kw">dim</span>(X)[<span class="dv">2</span>])
+
+  <span class="co"># mu</span>
+  <span class="cf">for</span> (p <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">dim</span>(X)[<span class="dv">2</span>]) {
+    mu[p] &lt;-<span class="st"> </span><span class="kw">mean</span>(X[,p])
+  }
+  
+  <span class="co"># sigma</span>
+  <span class="cf">for</span> (p <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">dim</span>(X)[<span class="dv">2</span>]) {
+    sigma[p] &lt;-<span class="st"> </span><span class="kw">sd</span>(X[,p])
+  }
+  
+  <span class="co"># X_norm</span>
+  <span class="cf">for</span> (p <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">dim</span>(X)[<span class="dv">2</span>]) {
+    <span class="cf">if</span> (sigma[p] <span class="op">!=</span><span class="st"> </span><span class="dv">0</span>)
+      <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">dim</span>(X)[<span class="dv">1</span>])
+        X_norm[i, p] &lt;-<span class="st"> </span>(X[i, p] <span class="op">-</span><span class="st"> </span>mu[p]) <span class="op">/</span><span class="st"> </span>sigma[p]
+      <span class="cf">else</span>
+        <span class="co"># sigma(p) == 0 &lt;=&gt; forall i, j,  X(i, p) == X(j, p) == mu(p)</span>
+        <span class="co"># In this case,  normalized values are all zero.</span>
+        <span class="co"># (mean is 0,  standard deviation is sigma(=0))</span>
+        X_norm[, p] &lt;-<span class="st"> </span><span class="kw">t</span>(<span class="kw">rep</span>(<span class="dv">0</span>,<span class="kw">dim</span>(X)[<span class="dv">1</span>]))
+  }
+  
+  <span class="kw">list</span>(<span class="dt">X_norm =</span> X_norm, <span class="dt">mu =</span> mu, <span class="dt">sigma =</span> sigma)
+}</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Scale features and set them to zero mean</span>
+<span class="kw">cat</span>(<span class="st">'Normalizing Features ...</span><span class="ch">\n</span><span class="st">'</span>)</code></pre></div>
+<pre><code>## Normalizing Features ...</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">fN &lt;-<span class="st"> </span><span class="kw">featureNormalize</span>(X)
+X &lt;-<span class="st"> </span>fN<span class="op">$</span>X_norm
+mu &lt;-<span class="st"> </span>fN<span class="op">$</span>mu
+sigma &lt;-<span class="st"> </span>fN<span class="op">$</span>sigma
+
+<span class="co"># Add intercept term to X</span>
+X &lt;-<span class="st"> </span><span class="kw">cbind</span>(<span class="kw">rep</span>(<span class="dv">1</span>,m),X)
+X &lt;-<span class="st"> </span><span class="kw">as.matrix</span>(X)</code></pre></div>
+<h2 id="part-2-gradient-descent">Part 2: Gradient Descent</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">computeCostMulti &lt;-<span class="st"> </span><span class="cf">function</span>(X, y, theta) {
+  <span class="co">#COMPUTECOSTMULTI Compute cost for linear regression with multiple variables</span>
+  <span class="co">#   J &lt;- COMPUTECOSTMULTI(X, y, theta) computes the cost of using theta as the</span>
+  <span class="co">#   parameter for linear regression to fit the data points in X and y</span>
+  
+  <span class="co"># Initialize some useful values</span>
+  m &lt;-<span class="st"> </span><span class="kw">length</span>(y) <span class="co"># number of training examples</span>
+  
+  J &lt;-<span class="st"> </span><span class="dv">0</span>
+  dif &lt;-<span class="st"> </span>X <span class="op">%*%</span><span class="st"> </span>theta <span class="op">-</span><span class="st"> </span>y
+  J &lt;-<span class="st"> </span>(<span class="kw">t</span>(dif) <span class="op">%*%</span><span class="st"> </span>dif) <span class="op">/</span><span class="st"> </span>(<span class="dv">2</span> <span class="op">*</span><span class="st"> </span>m)
+  J
+}</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">gradientDescentMulti &lt;-<span class="st"> </span><span class="cf">function</span>(X, y, theta, alpha, num_iters) {
+  <span class="co">#GRADIENTDESCENTMULTI Performs gradient descent to learn theta</span>
+  <span class="co">#   theta &lt;- GRADIENTDESCENTMULTI(x, y, theta, alpha, num_iters) updates theta by</span>
+  <span class="co">#   taking num_iters gradient steps with learning rate alpha</span>
+  
+  <span class="co"># Initialize some useful values</span>
+  m &lt;-<span class="st"> </span><span class="kw">length</span>(y) <span class="co"># number of training examples</span>
+  J_history &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">0</span>,num_iters)
+  
+  <span class="cf">for</span> (iter <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>num_iters) {
+    theta_prev &lt;-<span class="st"> </span>theta
+    
+    <span class="co"># number of features.</span>
+    p &lt;-<span class="st"> </span><span class="kw">dim</span>(X)[<span class="dv">2</span>]
+    
+    <span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>p) {
+      <span class="co"># calculate dJ/d(theta_j)</span>
+      deriv &lt;-<span class="st"> </span>(<span class="kw">t</span>(X <span class="op">%*%</span><span class="st"> </span>theta_prev <span class="op">-</span><span class="st"> </span>y) <span class="op">%*%</span><span class="st"> </span>X[,j]) <span class="op">/</span><span class="st"> </span>m
+      
+      <span class="co"># # update theta_j</span>
+      theta[j] &lt;-<span class="st"> </span>theta_prev[j] <span class="op">-</span><span class="st"> </span>(alpha <span class="op">*</span><span class="st"> </span>deriv)
+    }
+    
+    <span class="co"># Save the cost J in every iteration</span>
+    J_history[iter] &lt;-<span class="st"> </span><span class="kw">computeCostMulti</span>(X, y, theta)
+    
+  }
+  <span class="kw">list</span>(<span class="dt">theta =</span> theta, <span class="dt">J_history =</span> J_history)
+}</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Choose some alpha value</span>
+alpha &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># modified from 0.01 because 3.2.1</span>
+num_iters &lt;-<span class="st"> </span><span class="dv">50</span> <span class="co">#modified from 100 because 3.2.1</span>
+
+<span class="co"># Init Theta and Run Gradient Descent</span>
+theta &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">0</span>,<span class="dv">3</span>)
+<span class="co"># Here we can test different learning parameter alpha</span>
+gDM &lt;-<span class="st"> </span><span class="kw">gradientDescentMulti</span>(X, y, theta, alpha , num_iters)
+theta &lt;-<span class="st"> </span>gDM<span class="op">$</span>theta
+J_history &lt;-<span class="st"> </span>gDM<span class="op">$</span>J_history
+<span class="kw">rm</span>(gDM)
+
+<span class="co"># Plot the convergence graph</span>
+<span class="kw">plot</span>(<span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(J_history), J_history, <span class="dt">type=</span><span class="st">&quot;l&quot;</span>, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>, <span class="dt">cex=</span>.<span class="dv">1</span>,
+     <span class="dt">xlab=</span><span class="st">&quot;Number of Iterations&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Cost J&quot;</span>)</code></pre></div>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqAAAAHgCAMAAABNUi8GAAAAbFBMVEUAAAAAADoAAGYAAP8AOjoAOpAAZrY6AAA6ADo6AGY6OgA6Ojo6OpA6kNtmAABmADpmkJBmtrZmtv+QOgCQZgCQkGaQtpCQ2/+2ZgC225C2///bkDrb2//b/7bb////tmb/25D//7b//9v///8IM3/MAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAP+UlEQVR4nO3dDXujuBlGYTKp7Wm79uzGbUOHrfHH//+PRRJgzKwcQH7J43Du6+psuknQODmLQcYiuwDCss/+CwD3ECikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikESikPTjQDBjkswJ97ObwVREopBEopBEopBEopBEopBEopBEopBEopBEopCkF+vr62DHwBSgFSqH4hVGg5314pf9t1OYIFH02gR6/v18uxbefl7z63/DNESj6TAI977fuH3n1Z74esTkCRZ9JoKedf2ovVodLGdmFEigGMd2DrsPz/ODNESj6bI5Bi5f3cCB62vEUjxRGZ/FldQb/cqdPAsUwzINCGoFCmvFEfWwalEAxjNFJUrYNH5TNB4M2R6Dos5xmctxc6ODNESj6LCfqHSbqkYQ9KKRZHYPWu1COQZHG6Cz+tAtn8ZH9J4FiIOZBIY1AIc0w0NgJfHxzBIo+qUApFH0ECmlWgRbhLN5dFzpicwSKHvagkEagkEagkCY1D0qg6CNQSLML9LTLVoc8cq0IgWIYs0DLl/didTjtbgv94P5MBIoeq0DdJaHuWtBRCzcQKPqsAnUX1Y9e+oZA0We9B83HXFFPoOgzPgYtYiuEEigGMT2L57V4pGIeFNIIFNKM3hfvZj/L0UvfECj67AL174jvLOEwZHMEih6zQDvLgA/fHIGixyzQ48YHOm6i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" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Display gradient descent's result</span>
+<span class="kw">cat</span>(<span class="st">'Theta computed from gradient descent: </span><span class="ch">\n</span><span class="st">'</span>)</code></pre></div>
+<pre><code>## Theta computed from gradient descent:</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(theta)</code></pre></div>
+<pre><code>## [1] 340412.660 110631.050  -6649.474</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Estimate the price of a 1650 sq-ft, 3 br house</span>
+<span class="co"># Recall that the first column of X is all-ones. Thus, it does</span>
+<span class="co"># not need to be normalized.</span>
+
+price &lt;-<span class="st"> </span><span class="kw">cbind</span>(<span class="dv">1</span>, (<span class="dv">1650</span><span class="op">-</span>mu[<span class="dv">1</span>])<span class="op">/</span>sigma[<span class="dv">1</span>], (<span class="dv">3</span><span class="op">-</span>mu[<span class="dv">2</span>])<span class="op">/</span>sigma[<span class="dv">2</span>]) <span class="op">%*%</span><span class="st"> </span>theta
+
+<span class="kw">cat</span>(<span class="kw">sprintf</span>(<span class="st">'Predicted price of a 1650 sq-ft, 3 br house (using gradient descent):</span><span class="ch">\n</span><span class="st"> $%f</span><span class="ch">\n</span><span class="st">'</span>, price))</code></pre></div>
+<pre><code>## Predicted price of a 1650 sq-ft, 3 br house (using gradient descent):
+##  $293081.464335</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Plotting Training and regressioned data.</span>
+<span class="kw">cat</span>(<span class="st">'Plotting Training and regressioned results by gradient descent.</span><span class="ch">\n</span><span class="st">'</span>)</code></pre></div>
+<pre><code>## Plotting Training and regressioned results by gradient descent.</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">X &lt;-<span class="st"> </span><span class="kw">cbind</span>(<span class="kw">rep</span>(<span class="dv">1</span>,m), data[, <span class="dv">1</span><span class="op">:</span><span class="dv">2</span>])
+X &lt;-<span class="st"> </span><span class="kw">as.matrix</span>(X)
+<span class="kw">library</span>(rgl)
+
+<span class="kw">open3d</span>()</code></pre></div>
+<pre><code>## wgl 
+##   2</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot3d</span>(X[,<span class="dv">2</span>],X[,<span class="dv">3</span>],y, 
+       <span class="dt">xlab=</span> <span class="st">&quot;sq-ft of room&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;#bedroom&quot;</span>, <span class="dt">zlab=</span><span class="st">&quot;price&quot;</span>, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>,  
+       <span class="dt">type=</span><span class="st">&quot;s&quot;</span>,<span class="dt">size=</span><span class="fl">1.5</span>, <span class="dt">main=</span><span class="st">&quot;Result of Gradient Descent&quot;</span>)
+
+xx &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>,<span class="dv">5000</span>,<span class="dt">length.out=</span><span class="dv">25</span>)
+yy &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">1</span>,<span class="dv">5</span>,<span class="dt">length.out =</span> <span class="dv">25</span>)
+zz &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">0</span>,<span class="kw">length</span>(xx),<span class="kw">length</span>(yy))
+
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(xx))
+  <span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(yy))
+    zz[i,j] &lt;-<span class="st"> </span><span class="kw">cbind</span>(<span class="dv">1</span>, (xx[i]<span class="op">-</span>mu[<span class="dv">1</span>])<span class="op">/</span>sigma[<span class="dv">1</span>],(yy[j]<span class="op">-</span>mu[<span class="dv">2</span>])<span class="op">/</span>sigma[<span class="dv">2</span>]) <span class="op">%*%</span><span class="st"> </span>theta
+
+<span class="co">#MATLAB Like plane</span>
+nbcol =<span class="st"> </span><span class="dv">100</span>
+color =<span class="st"> </span><span class="kw">rev</span>(<span class="kw">rainbow</span>(nbcol, <span class="dt">start =</span> <span class="dv">0</span><span class="op">/</span><span class="dv">6</span>, <span class="dt">end =</span> <span class="dv">4</span><span class="op">/</span><span class="dv">6</span>))
+zcol  =<span class="st"> </span><span class="kw">cut</span>(zz, nbcol)
+
+<span class="kw">persp3d</span>(xx,yy,zz, <span class="dt">add =</span> <span class="ot">TRUE</span>, <span class="dt">col=</span>color[zcol],<span class="dt">alpha=</span>.<span class="dv">6</span>)</code></pre></div>
+<h2 id="part-3-normal-equations">Part 3: Normal Equations</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">normalEqn &lt;-<span class="st"> </span><span class="cf">function</span>(X, y) {
+  <span class="co">#NORMALEQN Computes the closed-form solution to linear regression</span>
+  <span class="co">#   NORMALEQN(X,y) computes the closed-form solution to linear</span>
+  <span class="co">#   regression using the normal equations.</span>
+  pinv &lt;-
+<span class="st">    </span><span class="cf">function</span> (X, <span class="dt">tol =</span> <span class="kw">max</span>(<span class="kw">dim</span>(X)) <span class="op">*</span><span class="st"> </span><span class="kw">max</span>(X) <span class="op">*</span><span class="st"> </span>.Machine<span class="op">$</span>double.eps)
+    {
+      <span class="cf">if</span> (<span class="kw">length</span>(<span class="kw">dim</span>(X)) <span class="op">&gt;</span><span class="st"> </span>2L <span class="op">||</span><span class="st"> </span><span class="op">!</span>(<span class="kw">is.numeric</span>(X) <span class="op">||</span><span class="st"> </span><span class="kw">is.complex</span>(X)))
+        <span class="kw">stop</span>(<span class="st">&quot;'X' must be a numeric or complex matrix&quot;</span>)
+      <span class="cf">if</span> (<span class="op">!</span><span class="kw">is.matrix</span>(X))
+        X &lt;-<span class="st"> </span><span class="kw">as.matrix</span>(X)
+      Xsvd &lt;-<span class="st"> </span><span class="kw">svd</span>(X)
+      <span class="cf">if</span> (<span class="kw">is.complex</span>(X))
+        Xsvd<span class="op">$</span>u &lt;-<span class="st"> </span><span class="kw">Conj</span>(Xsvd<span class="op">$</span>u)
+      Positive &lt;-<span class="st"> </span><span class="kw">any</span>(Xsvd<span class="op">$</span>d <span class="op">&gt;</span><span class="st"> </span><span class="kw">max</span>(tol <span class="op">*</span><span class="st"> </span>Xsvd<span class="op">$</span>d[1L], <span class="dv">0</span>))
+      <span class="cf">if</span> (Positive)
+        Xsvd<span class="op">$</span>v <span class="op">%*%</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">/</span><span class="st"> </span>Xsvd<span class="op">$</span>d <span class="op">*</span><span class="st"> </span><span class="kw">t</span>(Xsvd<span class="op">$</span>u))
+      <span class="cf">else</span>
+        <span class="kw">array</span>(<span class="dv">0</span>, <span class="kw">dim</span>(X)[2L<span class="op">:</span>1L])
+    }
+  
+  theta &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">0</span>,<span class="kw">length</span>(y))
+  theta &lt;-<span class="st"> </span><span class="kw">pinv</span>(<span class="kw">t</span>(X) <span class="op">%*%</span><span class="st"> </span>X) <span class="op">%*%</span><span class="st"> </span><span class="kw">t</span>(X) <span class="op">%*%</span><span class="st"> </span>y
+  theta
+}</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cat</span>(<span class="st">'Solving with normal equations...</span><span class="ch">\n</span><span class="st">'</span>)</code></pre></div>
+<pre><code>## Solving with normal equations...</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## Load Data
+data &lt;-<span class="st"> </span><span class="kw">read.table</span>(<span class="st">'ex1data2.txt'</span>,<span class="dt">sep =</span><span class="st">','</span>)
+X &lt;-<span class="st"> </span>data[, <span class="dv">1</span><span class="op">:</span><span class="dv">2</span>]
+y &lt;-<span class="st"> </span>data[, <span class="dv">3</span>]
+m &lt;-<span class="st"> </span><span class="kw">length</span>(y)
+
+<span class="co"># Add intercept term to X</span>
+X &lt;-<span class="st"> </span><span class="kw">cbind</span>(<span class="kw">rep</span>(<span class="dv">1</span>,m),X)
+X &lt;-<span class="st"> </span><span class="kw">as.matrix</span>(X)
+<span class="co"># Calculate the parameters from the normal equation</span>
+theta &lt;-<span class="st"> </span><span class="kw">normalEqn</span>(X, y)
+
+<span class="co"># Display normal equation's result</span>
+<span class="kw">cat</span>(<span class="st">'Theta computed from the normal equations: </span><span class="ch">\n</span><span class="st">'</span>)</code></pre></div>
+<pre><code>## Theta computed from the normal equations:</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(theta)</code></pre></div>
+<pre><code>##            [,1]
+## [1,] 89597.9095
+## [2,]   139.2107
+## [3,] -8738.0191</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Estimate the price of a 1650 sq-ft, 3 br house</span>
+price &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1650</span>, <span class="dv">3</span>) <span class="op">%*%</span><span class="st"> </span>theta
+
+<span class="kw">cat</span>(<span class="kw">sprintf</span>(<span class="st">'Predicted price of a 1650 sq-ft, 3 br house (using normal equations):</span><span class="ch">\n</span><span class="st"> $%f</span><span class="ch">\n</span><span class="st">'</span>, price))</code></pre></div>
+<pre><code>## Predicted price of a 1650 sq-ft, 3 br house (using normal equations):
+##  $293081.464335</code></pre>
+
+</body>
+</html>
