@@ -303,7 +303,7 @@ plotData(X, y,axLables = c('Microchip Test 1','Microchip Test 2'),
          legLabels = c("y = 1","y = 0"))
 ```
 
-[](ex2_logistic_regression_files/figure-markdown_github/unnamed-chunk-9-2.png)
+![](ex2_logistic_regression_files/figure-markdown_github/unnamed-chunk-9-2.png)
 
 Regularized
 -----------
