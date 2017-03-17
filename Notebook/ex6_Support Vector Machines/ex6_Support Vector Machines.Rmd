@@ -1,0 +1,89 @@
+---
+title: "Support Vector Machines with R"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Initialization
+
+```{r}
+rm(list=ls())
+sources <- c("gaussianKernel.R","dataset3Params.R", "plotData.R",
+             "svmPredict.R","visualizeBoundary.R","bsxfun.R",
+             "linearKernel.R","visualizeBoundaryLinear.R","svmTrain.R","meshgrid.R")
+
+for (i in 1:length(sources)) {
+  cat(paste("Loading ",sources[i],"\n"))
+  source(sources[i])
+}
+```
+
+## Part 1: Loading and Visualizing Data
+
+```{r}
+cat(sprintf('Loading and Visualizing Data ...\n'))
+# Load from ex6data1: 
+load("ex6data1.Rda")
+list2env(data, env = .GlobalEnv)
+rm(data)
+# Plot training data
+plotData(X, y)
+```
+
+## Part 2: Training Linear SVM
+
+```{r}
+cat(sprintf('\nTraining Linear SVM ...\n'))
+C <- 1
+Rprof()
+model <- svmTrain(X, y, C, linearKernel, 1e-3, 20)
+visualizeBoundaryLinear(X, y, model)
+```
+
+## Part 3: Implementing Gaussian Kernel
+
+```{r}
+cat(sprintf('\nEvaluating the Gaussian Kernel ...\n'))
+
+x1 <- c(1, 2, 1)
+x2 <- c(0, 4, -1)
+sigma <- 2
+sim <- gaussianKernel(sigma)(x1, x2)
+
+cat(sprintf('Gaussian Kernel between x1 = [1; 2; 1], x2 = [0; 4; -1], sigma = 0.5 :\n
+\t%f\n(this value should be about 0.324652)\n', sim))
+```
+
+## Part 4: Visualizing Dataset 2
+
+```{r}
+cat(sprintf('Loading and Visualizing Data ...\n'))
+load("ex6data2.Rda")
+list2env(data,.GlobalEnv)
+rm(data)
+# Plot training data
+plotData(X, y)
+```
+
+## Part 5: Training SVM with RBF Kernel (Dataset 2)
+
+```{r}
+cat(sprintf('\nTraining SVM with RBF Kernel (this may take 1 to 2 minutes) ...\n'))
+
+# Load from ex6data2: 
+# You will have X, y in your environment
+load("ex6data2.Rda")
+list2env(data,.GlobalEnv)
+rm(data)
+# SVM Parameters
+C <- 1; sigma <- 0.1
+
+# We set the tolerance and max_passes lower here so that the code will run
+# faster. However, in practice, you will want to run the training to
+# convergence.
+model<- svmTrain(X, y, C, gaussianKernel(sigma))
+q <- visualizeBoundary(X, y, model)
+```
